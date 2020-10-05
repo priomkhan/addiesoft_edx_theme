@@ -1,3 +1,19 @@
 KNS_IT_PLATFORM_NAME: "KNS IT  E-LEARNING PLATFORM"
 KNS_IT_WELCOME_MESSAGE: "Your Online Classroom"
 
+KNSIT_PRIMARY_COLOR: "#3b85ff" # cool blue
+
+# Footer links are dictionaries with a "title" and "url"
+# To remove all links, write:
+# KNSIT_FOOTER_NAV_LINKS: []
+# KNSIT_FOOTER_LEGAL_LINKS: []
+KNSIT_FOOTER_NAV_LINKS:
+  - title: "About"
+    url: "/about"
+  - title: "Contact"
+    url: "/contact"
+KNSIT_FOOTER_LEGAL_LINKS:
+    - title: "Terms of service"
+      url: "/tos"
+    - title: "KNSIT theme for Open edX"
+      url: "https://github.com/priomkhan/kns-it-default-with-logo"
