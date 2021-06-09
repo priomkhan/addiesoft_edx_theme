@@ -11,10 +11,8 @@ import pytz
 import traceback
 from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
 from openedx.core.djangolib.markup import HTML, Text
-from branding.api import get_footer
 %>
 
-<% footer = get_footer(is_secure=is_secure) %>
 
 % if uses_bootstrap:
     <p>
