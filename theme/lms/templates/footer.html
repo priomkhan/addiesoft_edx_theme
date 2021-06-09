@@ -14,6 +14,9 @@ from openedx.core.djangolib.markup import HTML, Text
 %>
 
 <% footer = get_footer(is_secure=is_secure) %>
+<% icp_license_info = getattr(settings, 'ICP_LICENSE_INFO', {})%>
+
+
 
 <div class="wrapper wrapper-footer">
   <footer>
