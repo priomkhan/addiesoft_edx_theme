@@ -11,12 +11,12 @@
 <%namespace name='static' file='static_content.html'/>
 import traceback
 
-try:
-1/0
-except Exception as e:
-    trace_back = traceback.format_exc()
-    message = str(e)+ " " + str(trace_back)
-    print message
+% try:
+  %1/0
+% except Exception as e:
+    %trace_back = traceback.format_exc()
+    %message = str(e)+ " " + str(trace_back)
+    %print message
 
 % if include_dependencies:
   <%static:js group='base_vendor'/>
