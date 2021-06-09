@@ -10,7 +10,7 @@
 <% icp_license_info = getattr(settings, 'ICP_LICENSE_INFO', {})%>
 <%namespace name='static' file='static_content.html'/>
 
-{% comment %} % if uses_bootstrap:
+% if uses_bootstrap:
   <div class="container-fluid wrapper-footer">
     <footer>
       <div class="row">
@@ -68,7 +68,7 @@
     </footer>
   </div>
 % else:
-  <div class="wrapper wrapper-footer">
+  {% comment %} <div class="wrapper wrapper-footer">
     <footer id="footer-openedx" class="grid-container"
       ## When rendering the footer through the branding API,
       ## the direction may not be set on the parent element,
@@ -145,8 +145,8 @@
       </div>
       % endif
     </footer>
-  </div>
-% endif {% endcomment %}
+  </div> {% endcomment %}
+% endif
 % if include_dependencies:
   <%static:js group='base_vendor'/>
   <%static:css group='style-vendor'/>
