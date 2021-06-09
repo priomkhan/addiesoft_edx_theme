@@ -8,12 +8,4 @@ KNSIT_PRIMARY_COLOR: "#3b85ff" # cool blue
 # KNSIT_FOOTER_NAV_LINKS: []
 # KNSIT_FOOTER_LEGAL_LINKS: []
 KNSIT_FOOTER_NAV_LINKS:[]
-  # - title: "About"
-  #   url: "/about"
-  # - title: "Contact"
-  #   url: "/contact"
-KNSIT_FOOTER_LEGAL_LINKS:
-    - title: "Terms of service"
-      url: "/tos"
-    - title: "KNSIT theme for Open edX"
-      url: "https://github.com/priomkhan/kns-it-default-with-logo"
+KNSIT_FOOTER_LEGAL_LINKS:[]
