@@ -82,11 +82,15 @@ from openedx.core.djangolib.markup import HTML, Text
       ## which are not technically powered by OpenEdX.
       % if not hide_openedx_link:
       <div class="footer-about-openedx">
-        <p>
-          <a href="${footer['openedx_link']['url']}" rel="noopener" target="_blank">
-            <img src="${static.url('images/openedx-logo.png')}" alt="${footer['openedx_link']['title']}" width="140" />
-          </a>
-        </p>
+          <p>
+            <a href="http://openedx.org/">
+              ## standard powered-by logo
+              ## Translators: 'Open edX' is a brand, please keep this untranslated. See http://openedx.org for more information.
+              <img src="https://files.edx.org/openedx-logos/open-edx-logo-tag.png" alt="${_('Powered by Open edX')}" width="175" />
+              ## white logo for dark background
+              ## <img src="https://files.edx.org/openedx-logos/open-edx-logo-tag-dark.png" alt="${_('Powered by Open edX')}" width="175" />
+            </a>
+          </p>
       </div>
       % endif
     </footer>
