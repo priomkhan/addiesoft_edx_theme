@@ -7,11 +7,11 @@ KNSIT_PRIMARY_COLOR: "#3b85ff" # cool blue
 # To remove all links, write:
 # KNSIT_FOOTER_NAV_LINKS: []
 # KNSIT_FOOTER_LEGAL_LINKS: []
-KNSIT_FOOTER_NAV_LINKS:
-  - title: "About"
-    url: "/about"
-  - title: "Contact"
-    url: "/contact"
+KNSIT_FOOTER_NAV_LINKS:[]
+  # - title: "About"
+  #   url: "/about"
+  # - title: "Contact"
+  #   url: "/contact"
 KNSIT_FOOTER_LEGAL_LINKS:
     - title: "Terms of service"
       url: "/tos"
