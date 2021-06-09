@@ -10,7 +10,7 @@
 <% icp_license_info = getattr(settings, 'ICP_LICENSE_INFO', {})%>
 <%namespace name='static' file='static_content.html'/>
 
-% if uses_bootstrap:
+{% comment %} % if uses_bootstrap:
   <div class="container-fluid wrapper-footer">
     <footer>
       <div class="row">
@@ -146,7 +146,7 @@
       % endif
     </footer>
   </div>
-% endif
+% endif {% endcomment %}
 % if include_dependencies:
   <%static:js group='base_vendor'/>
   <%static:css group='style-vendor'/>
