@@ -13,6 +13,11 @@ from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_en
 from openedx.core.djangolib.markup import HTML, Text
 %>
 
+<% footer = get_footer(is_secure=is_secure) %>
+<% icp_license_info = getattr(settings, 'ICP_LICENSE_INFO', {})%>
+
+
+
 <div class="wrapper wrapper-footer">
   <footer>
     <!-- This is super-ugly, don't use it! -->
