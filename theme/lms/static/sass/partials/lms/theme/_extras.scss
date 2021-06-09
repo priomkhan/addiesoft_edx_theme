@@ -167,26 +167,26 @@ h1, h2, h3, h1 span, h2 span, h3 span, .nav-item {
 //   border-bottom-color: $primary;
 // }
 
-// /////////////// Footer
-// .wrapper-footer {
-//   box-shadow: none;
-//   padding: 25px 40px;
+/////////////// Footer
+.wrapper-footer {
+  box-shadow: none;
+  padding: 25px 40px;
   
-//   // .wrapper-logo {
-//   //     display: none;
-//   // }
-//   // .copyright {
-//   //     display: none;
-//   // }
-//   .nav-legal ul {
-//       display: inline-block;
-//   }
-//   footer#footer-openedx .footer-about-openedx {
-//     a {
-//       float: none;
-//     }
-//     p {
-//       text-align: right;
-//     }
-//   }
-// }
+  .wrapper-logo {
+      display: none;
+  }
+  .copyright {
+      display: none;
+  }
+  .nav-legal ul {
+      display: inline-block;
+  }
+  footer#footer-openedx .footer-about-openedx {
+    a {
+      float: none;
+    }
+    p {
+      text-align: right;
+    }
+  }
+}
