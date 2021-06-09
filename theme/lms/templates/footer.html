@@ -12,7 +12,7 @@ import traceback
 from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
 from openedx.core.djangolib.markup import HTML, Text
 %>
-
+<% icp_license_info = getattr(settings, 'ICP_LICENSE_INFO', {})%>
 
 % if uses_bootstrap:
     <p>
@@ -55,7 +55,7 @@ from openedx.core.djangolib.markup import HTML, Text
               ## can be included in the footer on other sites
               ## (e.g. a blog or marketing front-end) to provide a consistent
               ## user experience.  See the branding app for details.
-              <img alt="${_('organization logo')}" src="${footer['logo_image']}" width="280"/>
+              <img alt="organization logo placeholder" src="${static.url("images/logo.png")}" width="280">
             </a>
           </p>
         </div>
