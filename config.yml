@@ -13,7 +13,7 @@ KNSIT_FOOTER_NAV_LINKS:
     - title: "Contact"
       url: "/contact"
 KNSIT_FOOTER_LEGAL_LINKS:
-    - title: "Terms of service"
-      url: "/tos"
+    - title: "Copyright © 2021 KNS IT Group."
+      url: "www.knsitgroup.com"
     - title: "KNSIT theme for Open edX"
       url: "https://github.com/priomkhan/kns-it-default-with-logo"
