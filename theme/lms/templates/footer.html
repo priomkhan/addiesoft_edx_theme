@@ -19,10 +19,10 @@ from openedx.core.djangolib.markup import HTML, Text
     <footer>
       <div class="row">
         <div class="col-md-9">
-          {% if KNSIT_FOOTER_NAV_LINKS %}
+          {% if ADDIE_SOFT_FOOTER_NAV_LINKS %}
           <nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
             <ul class="navbar-nav">
-              {% for link in KNSIT_FOOTER_NAV_LINKS %}
+              {% for link in ADDIE_SOFT_FOOTER_NAV_LINKS %}
                 <li class="nav-item">
                   <a class="nav-link" href="{{ link['url'] }}">{{ link['title'] }}</a>
                 </li>
@@ -34,10 +34,10 @@ from openedx.core.djangolib.markup import HTML, Text
           ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
           <p class="copyright">&copy; ${datetime.now(pytz.timezone(settings.TIME_ZONE)).year} ${static.get_platform_name()}.</p>
 
-          {% if KNSIT_FOOTER_LEGAL_LINKS %}
+          {% if ADDIE_SOFT_FOOTER_LEGAL_LINKS %}
           <nav class="navbar legal-nav navbar-expand-sm" aria-label="${_('Legal')}">
             <ul class="navbar-nav">
-              {% for link in KNSIT_FOOTER_LEGAL_LINKS %}
+              {% for link in ADDIE_SOFT_FOOTER_LEGAL_LINKS %}
                 <li class="nav-item">
                   <a class="nav-link" href="{{ link['url'] }}">{{ link['title'] }}</a>
                 </li>
@@ -83,10 +83,10 @@ from openedx.core.djangolib.markup import HTML, Text
       % endif
     >
       <div class="colophon">
-        {% if KNSIT_FOOTER_NAV_LINKS %}
+        {% if ADDIE_SOFT_FOOTER_NAV_LINKS %}
         <nav class="nav-colophon" aria-label="${_('About')}">
           <ol>
-              {% for link in KNSIT_FOOTER_NAV_LINKS %}
+              {% for link in ADDIE_SOFT_FOOTER_NAV_LINKS %}
               <li>
                 <a href="{{ link['url'] }}">{{ link['title'] }}</a>
               </li>
@@ -100,7 +100,7 @@ from openedx.core.djangolib.markup import HTML, Text
 
         <div class="wrapper-logo">
           <p>
-            <a href="https://knsitgroup.com" rel="noopener" target="_blank">
+            <a href="https://www.addiesoft.com" rel="noopener" target="_blank">
               ## The default logo is a placeholder.
               ## You can either replace this link entirely or update
               ## the FOOTER_ORGANIZATION_IMAGE in Django settings.
@@ -116,10 +116,10 @@ from openedx.core.djangolib.markup import HTML, Text
         ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
         <p class="copyright">&copy; ${datetime.now(pytz.timezone(settings.TIME_ZONE)).year} ${static.get_platform_name()}.</p>
 
-        {% if KNSIT_FOOTER_LEGAL_LINKS %}
+        {% if ADDIE_SOFT_FOOTER_LEGAL_LINKS %}
         <nav class="nav-legal" aria-label="${_('Legal')}">
           <ul>
-            {% for link in KNSIT_FOOTER_LEGAL_LINKS %}
+            {% for link in ADDIE_SOFT_FOOTER_LEGAL_LINKS %}
               <li>
                 <a href="{{ link['url'] }}">{{ link['title'] }}</a>
               </li>
