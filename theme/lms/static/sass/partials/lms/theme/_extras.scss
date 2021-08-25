@@ -167,6 +167,13 @@ h1, h2, h3, h1 span, h2 span, h3 span, .nav-item {
 //   border-bottom-color: $primary;
 // }
 
+
+////Header Logo
+header.global-header .header.logo a .logo{
+  height: 100px;
+}
+
+
 /////////////// Footer
 .wrapper-footer {
   box-shadow: none;
